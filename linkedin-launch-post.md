@@ -1,87 +1,35 @@
-AI-Assisted Software Engineering: Principles for Building Sustainable Systems with AI
+I'm an engineering manager. I spend my working days leading teams that build software for robotic systems.
+But in my free time, I love to cook 👨🏾‍🍳.
 
-Intro (Post)
+Lately I've been thinking a lot about vibe coding, and about what actually separates it from software engineering. The clearest analogy didn't come from code. It came from my cooking.
 
-I’ve been getting my hands dirty with AI-assisted software development lately.
+When I cook just for myself, that's my vibe cooking: solo night, no recipe, whatever is in the fridge. I experiment freely, because I'm the only one eating it. If it fails, nothing is lost. And those experiments matter: vibe cooking is where I learn, where I prototype dishes I would never risk on a guest.
 
-And I’m having a lot of fun with it. 😅
+But when I cook for other people, everything changes. I select the ingredients carefully (planning). I think about the guests (requirements) and the form (architecture). I taste and adjust as I go (quality control). I care about presentation (user experience).
 
-I’m not a traditional software developer. My background is in mechatronics and robotics, and I’ve spent years working at the intersection of software, product, architecture, quality, and engineering leadership.
+I'm not against vibe coding. I do it in the kitchen, and I do it in code. But there's a difference between making something only you will consume, and making something other people will depend on. I call the other side of it AI-Assisted Software Engineering.
 
-For much of my career, I’ve been closer to the teams building software than to the keyboard myself.
+Here's how I got there.
+
+I'm not a traditional software developer. I did my share of programming early on, but most of my career has been spent closer to the teams building software than to the keyboard myself. The engineering judgment was there: systems, architecture, quality, trade-offs, understanding the customer. What stood between that judgment and building things myself was the implementation barrier.
 
 AI has changed that equation for me.
 
-I’ve been spending some of my free time experimenting with different AI tools, learning unfamiliar technologies, and building personal applications and projects that I probably would have hesitated to build myself before.
+AI can lower the barrier to implementation without lowering the need for engineering. But AI can also help us do the engineering!
 
-And it’s been an incredible learning experience.
+For years, good engineering practices have competed with time and cost. Architecture takes time. Testing takes time. Documentation gets pushed aside. The quiet question was always: how much engineering discipline can we afford?
+What if AI changes that equation? What if engineering discipline itself becomes dramatically more scalable?
 
-But something interesting happened as I started building more.
+There's a mirror image, though: AI amplifies bad engineering just as easily. So the goal isn't to constrain AI. It's to direct its enormous implementation capability toward sustainable engineering.
 
-The interesting part wasn’t just that AI could write code.
+So I wrote down the principles I'm gravitating toward. Not a methodology, not a prescription. Just ideas I'm testing, organized around four pillars:
 
-I started recognizing many of the same engineering problems I’ve spent years thinking about:
+- Think before you generate.
+- Generate responsibly.
+- Prove it works.
+- Build for the future.
 
-Architecture. Requirements. Quality. Testing. Context. Documentation. Technical debt. Trade-offs.
-
-And I found myself thinking about my AI tools in a surprisingly familiar way.
-
-If I’m effectively working with a team of AI assistants, I don’t want to repeat the same expectations every session:
-
-Write maintainable code.
-Follow good engineering practices.
-Don’t skip testing.
-Remember why we’re building this.
-
-I want those expectations to become part of the way I work.
-
-That realization sent me down a bit of a rabbit hole. 😆
-
-The more I experimented, the more I kept coming back to one idea:
-
-AI can lower the barrier to implementation without lowering the need for engineering. But it can also help us do the engineering!
-
-And that raises a really interesting question:
-
-What does sustainable software engineering look like when implementation becomes dramatically cheaper?
-
-I’m increasingly convinced the opportunity isn’t simply to produce more code, faster.
-
-As implementation becomes cheaper, things like understanding the problem, making good decisions, designing architecture, validating outcomes, managing complexity, and preserving knowledge may become even more important.
-
-But AI can help us with many of those things too.
-
-So I started writing down some of the principles I’m currently gravitating toward when working with AI.
-
-Not as a methodology.
-Not as a prescription.
-And certainly not because I think I’ve figured all of this out.
-
-They’re simply ideas I’ve arrived at through hands-on experimentation, reading, conversations with AI systems, discussions with peers and friends, following what people in the industry are sharing and debating, and years of working in engineering.
-
-I’ve organized them around four ideas:
-
-Think before you generate.
-Generate responsibly.
-Prove it works.
-Build for the future.
-
-Some of these ideas may feel obvious. Others I’m still thinking through.
-
-But we’re living through an incredibly interesting period in software development, and things are moving quickly enough that I think it’s worth occasionally stopping to ask what good engineering should look like on the other side of all this acceleration.
-
-So I decided to stop and write down what I’m seeing.
-
-I’m calling it:
-
-AI-Assisted Software Engineering: Principles for Building Sustainable Systems with AI
-
-I’m sharing a few of the ideas here, along with the full document.
-
-I expect some of these ideas will evolve.
-Some might be wrong.
-And I’d genuinely like them to be challenged.
-
-It’s an exciting time to be building software. Let’s enjoy the ride, but let’s keep our hands on the wheel (at least for now 😅).
+The full document is attached, and it also lives on GitHub, where it will keep evolving. Some of these ideas might be wrong, and I'd genuinely like them to be challenged.
+It's an exciting time to be building software. Let's enjoy the ride, but let's keep our hands on the wheel (at least for now 😅).
 
 What are you seeing?
