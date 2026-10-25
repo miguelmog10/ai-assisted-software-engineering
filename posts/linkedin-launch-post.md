@@ -3,7 +3,7 @@ But in my free time, I love to cook 👨🏾‍🍳.
 
 Lately I've been thinking a lot about vibe coding, and about what actually separates it from software engineering. The clearest analogy didn't come from code. It came from my cooking.
 
-When I cook just for myself, that's my vibe cooking: solo night, no recipe, whatever is in the fridge. I experiment freely, because I'm the only one eating it. If it fails, nothing is lost. And those experiments matter: vibe cooking is where I learn, where I prototype dishes I would never risk on a guest.
+When I cook just for myself, that's my vibe cooking: solo night, no recipe, whatever is in the fridge. I experiment freely, because I'm the only one eating it. If it fails, nothing is lost. And those experiments matter: vibe cooking is where I learn, where I prototype dishes I would never risk on a guest. It makes my serious cooking better.
 
 But when I cook for other people, everything changes. I select the ingredients carefully (planning). I think about the guests (requirements) and the form (architecture). I taste and adjust as I go (quality control). I care about presentation (user experience).
 
@@ -30,6 +30,7 @@ So I wrote down the principles I'm gravitating toward. Not a methodology, not a 
 - Build for the future.
 
 The full document is attached, and it also lives on GitHub, where it will keep evolving. Some of these ideas might be wrong, and I'd genuinely like them to be challenged.
+
 It's an exciting time to be building software. Let's enjoy the ride, but let's keep our hands on the wheel (at least for now 😅).
 
 What are you seeing?
