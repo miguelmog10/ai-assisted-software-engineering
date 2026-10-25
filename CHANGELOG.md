@@ -3,6 +3,16 @@ Changelog
 
 How the thinking in this framework evolves, recorded as it happens.
 
+[1.0.0] --- 2026-10-25
+--------------------
+
+****Version 1.0 frozen.**** The full document as it will be published:
+
+-   Introduction built around the cooking analogy (vibe cooking vs cooking for others), on top of the reframed thesis.
+-   16 principles across four pillars, including the "Scale deliberately" section (prototype, product, production) and refinements from the first real-world use: AI reviewing AI outputs (P5), small increments tied to version control and pull requests (P6), tickets and knowledge-base pages as handoff equivalents (P8), documentation priorities and uneven standards (P13), and the water-level analogy for rising AI capabilities (closing).
+-   American spelling throughout.
+-   First living proof: the light version of these principles is already in use on Knowledge Automata, an open-source multi-agent system built on Cohere's platform.
+
 [0.4.0] --- 2026-10-22
 --------------------
 
