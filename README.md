@@ -8,10 +8,10 @@ AI has lowered the barrier to implementation without lowering the need for engin
 What's here
 -----------
 
--   [****PRINCIPLES.md****](https://PRINCIPLES.md) --- the full document: 17 principles organized around four pillars.
--   [****posts/****](https://posts/) --- launch post and follow-up writing.
--   [****case-studies/****](https://case-studies/) --- real project walkthroughs where the principles held up (or didn't).
--   [****CHANGELOG.md****](https://CHANGELOG.md) --- version history of the framework.
+-   [****PRINCIPLES.md****](PRINCIPLES.md) --- the full document: 17 principles organized around four pillars.
+-   [****posts/****](posts) --- launch post and follow-up writing.
+-   [****case-studies/****](case-studies) --- real project walkthroughs where the principles held up (or didn't).
+-   [****CHANGELOG.md****](CHANGELOG.md) --- version history of the framework.
 
 The four pillars
 ----------------
