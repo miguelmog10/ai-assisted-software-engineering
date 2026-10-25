@@ -29,7 +29,7 @@ So I wrote down the principles I'm gravitating toward. Not a methodology, not a 
 - Prove it works.
 - Build for the future.
 
-The full document is attached, and it also lives on GitHub, where it will keep evolving. Some of these ideas might be wrong, and I'd genuinely like them to be challenged.
+The carousel attached summarizes the argument. The full document is a living repository on GitHub, and it will keep evolving (link in the comments).
 
 It's an exciting time to be building software. Let's enjoy the ride, but let's keep our hands on the wheel (at least for now 😅).
 
