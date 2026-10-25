@@ -11,7 +11,7 @@ I'm not against vibe coding. I do it in the kitchen, and I do it in code. But th
 
 Here's how I got there.
 
-I'm not a traditional software developer. I did my share of programming early on, but most of my career has been spent closer to the teams building software than to the keyboard myself. The engineering judgment was there: systems, architecture, quality, trade-offs, understanding the customer. What stood between that judgment and building things myself was the implementation barrier.
+I did my share of programming early on, but most of my career has been spent closer to the teams building software than to the keyboard myself, and what stood between that judgment and building was the implementation barrier.
 
 AI has changed that equation for me.
 
