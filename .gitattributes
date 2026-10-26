@@ -1,0 +1,3 @@
+# Language stats: this repo is a document, so count Markdown and treat the carousel source as supporting material.
+*.md linguist-detectable
+posts/carousel/** linguist-documentation
