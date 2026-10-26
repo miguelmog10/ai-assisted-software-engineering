@@ -11,7 +11,7 @@ I'm not against vibe coding. I do it in the kitchen, and I do it in code. But th
 
 Here's how I got there.
 
-I did my share of programming early on, but most of my career has been spent closer to the teams building software than to the keyboard myself, and what stood between that judgment and building was the implementation barrier.
+I did my share of programming early on, but most of my career has been spent closer to the teams building software than to the keyboard myself. The engineering judgment was there. What stood between it and building things myself was the implementation barrier.
 
 AI has changed that equation for me.
 
@@ -20,7 +20,7 @@ AI can lower the barrier to implementation without lowering the need for enginee
 For years, good engineering practices have competed with time and cost. Architecture takes time. Testing takes time. Documentation gets pushed aside. The quiet question was always: how much engineering discipline can we afford?
 What if AI changes that equation? What if engineering discipline itself becomes dramatically more scalable?
 
-There's a mirror image, though: AI amplifies bad engineering just as easily. So the goal isn't to constrain AI. It's to direct its enormous implementation capability toward sustainable engineering.
+The catch: AI can amplify bad engineering just as easily. So the goal isn't to constrain AI. It's to direct its enormous implementation capability toward sustainable engineering.
 
 So I wrote down the principles I'm gravitating toward. Not a methodology, not a prescription. Just ideas I'm testing, organized around four pillars:
 

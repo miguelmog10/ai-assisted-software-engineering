@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="en" data-theme="neutral">
+<head>
+<meta charset="utf-8">
+<title>AI-Assisted Software Engineering: launch carousel</title>
+<!--
+  Launch carousel, v1.0. 10 slides, 1080 x 1350 px each (LinkedIn portrait).
+  Themes are design tokens: set data-theme on <html> to neutral | light | dark,
+  or open with ?theme=dark. Render to PDF with render.js.
+  Fonts: Lora and Inter, both SIL Open Font License 1.1.
+-->
+<style>
+  @font-face { font-family: "Lora"; src: url("fonts/Lora-Variable.ttf") format("truetype"); font-weight: 400 700; font-style: normal; }
+  @font-face { font-family: "Lora"; src: url("fonts/Lora-Italic-Variable.ttf") format("truetype"); font-weight: 400 700; font-style: italic; }
+  @font-face { font-family: "Inter"; src: url("fonts/Inter-Regular.otf") format("opentype"); font-weight: 400; }
+  @font-face { font-family: "Inter"; src: url("fonts/Inter-Medium.otf") format("opentype"); font-weight: 500; }
+  @font-face { font-family: "Inter"; src: url("fonts/Inter-SemiBold.otf") format("opentype"); font-weight: 600; }
+
+  /* Design tokens. All text pairs pass WCAG AA (checked 4.5:1 minimum). */
+  :root, [data-theme="neutral"] {
+    --bg: #E9E5DE;     /* warm grey paper: sits between light and dark feeds */
+    --ink: #22201D;    /* 12.9:1 */
+    --muted: #57524B;  /* 6.2:1 */
+    --accent: #9C4426; /* terracotta, 5.1:1 */
+    --rule: #C9C2B7;
+    --frame: #D4CEC4; /* header and footer lines */
+  }
+  [data-theme="light"] {
+    --bg: #FAF8F4; --ink: #1B1A18; --muted: #5C5750; --accent: #A84A28; --rule: #DDD7CD; --frame: #E8E3DB;
+  }
+  [data-theme="dark"] {
+    --bg: #1D1C1A; --ink: #EDE9E2; --muted: #A9A39A; --accent: #E3906C; --rule: #3A3733; --frame: #2E2C29;
+  }
+
+  @page { size: 1080px 1350px; margin: 0; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { background: var(--bg); }
+  body { font-family: "Inter", sans-serif; color: var(--ink); -webkit-font-smoothing: antialiased; }
+
+  .slide {
+    width: 1080px; height: 1350px; position: relative; overflow: hidden;
+    background: var(--bg); padding: 92px 96px 84px;
+    display: flex; flex-direction: column;
+    page-break-after: always; break-after: page;
+  }
+  .slide:last-child { page-break-after: auto; break-after: auto; }
+
+  /* Running header and footer */
+  .head {
+    display: flex; justify-content: space-between; align-items: baseline;
+    font-size: 21px; font-weight: 500; letter-spacing: .16em; text-transform: uppercase; color: var(--muted);
+    padding-bottom: 26px; border-bottom: 1.5px solid var(--rule);
+  }
+  .head .num { font-variant-numeric: tabular-nums; letter-spacing: .08em; }
+  .foot {
+    display: flex; justify-content: space-between; align-items: center;
+    font-size: 24px; font-weight: 500; color: var(--muted);
+    padding-top: 26px; border-top: 1.5px solid var(--rule);
+  }
+  .foot .mark { width: 14px; height: 14px; background: var(--accent); }
+  .foot .swipe { color: var(--accent); font-size: 34px; line-height: 1; }
+
+  .body { flex: 1; display: flex; flex-direction: column; justify-content: center; }
+
+  /* Type */
+  h1, h2, .anchor, .q { font-family: "Lora", serif; font-weight: 500; letter-spacing: -0.012em; }
+  h1 { font-size: 86px; line-height: 1.1; }
+  h1.xl { font-size: 104px; line-height: 1.06; }
+  h1.md { font-size: 74px; line-height: 1.12; }
+  h1 .line { display: block; }
+  h1.hook { font-size: 78px; line-height: 1.12; }
+  .nw { white-space: nowrap; }
+  h1.hook .line + .line { margin-top: 34px; }
+  h1 .line + .line { margin-top: 18px; }
+  .sub { font-size: 36px; line-height: 1.42; color: var(--muted); max-width: 860px; margin-top: 56px; }
+  .sub p + p { margin-top: 20px; }
+  .sub .strong { color: inherit; }
+  em, .accent { color: var(--accent); }
+  h1 em { font-style: italic; }
+  .sub em { font-family: "Lora", serif; font-style: italic; font-size: 1.06em; }
+  .kicker { font-family: "Lora", serif; font-style: italic; font-size: 46px; color: var(--accent); margin-bottom: 30px; }
+  .rule { width: 120px; height: 4px; background: var(--accent); margin: 60px 0 0; }
+
+  /* Slide 1: the one kitchen moment */
+  .bowl { width: 220px; height: auto; margin-bottom: 64px; color: var(--accent); }
+
+  /* Pillar slides */
+  .pillar .body { justify-content: flex-start; padding-top: 120px; position: relative; }
+  .pillar .kicker.pk { position: absolute; top: 34px; left: 0; margin: 0; } /* keeps numeral height equal across pillars */
+  .pillar .numeral { font-family: "Lora", serif; font-style: italic; font-weight: 500; font-size: 220px; line-height: .9; color: var(--accent); }
+  .pillar .pname { font-size: 34px; font-weight: 600; letter-spacing: .02em; margin-top: 34px; }
+  .pillar .anchor { font-size: 82px; line-height: 1.1; margin-top: 70px; text-indent: -0.42em; }
+  .pillar .anchor .qm { color: var(--ink); }
+  .plist { list-style: none; margin-top: 80px; }
+  .plist li { display: flex; gap: 22px; align-items: baseline; font-size: 36px; line-height: 1.3; }
+  .plist li + li { margin-top: 34px; }
+  .plist .pn { font-family: "Lora", serif; font-size: 48px; font-weight: 500; line-height: 1; color: var(--muted); font-variant-numeric: lining-nums tabular-nums; min-width: 58px; }
+
+  /* Slide 9: scale steps */
+  .steps { display: flex; gap: 26px; align-items: flex-end; margin-top: 64px; height: 300px; }
+  .step { flex: 1 1 0; min-width: 0; border-top: 6px solid var(--accent); display: flex; flex-direction: column; justify-content: flex-start; padding-top: 22px; }
+  .step span { font-size: 32px; font-weight: 400; color: var(--muted); }
+  .step small { display: block; font-size: 24px; color: var(--muted); margin-top: 8px; font-variant-numeric: tabular-nums; letter-spacing: .08em; }
+  .step.s1 { height: 120px; } .step.s2 { height: 210px; } .step.s3 { height: 300px; }
+  .step.s1, .step.s2, .step.s3 { background: linear-gradient(to bottom, color-mix(in srgb, var(--accent) 8%, transparent), transparent); }
+
+  /* Slide 10 */
+  .q { font-style: italic; font-size: 60px; color: var(--accent); margin-top: 64px; }
+  .repo { margin-top: 64px; font-size: 30px; font-weight: 500; color: var(--ink); letter-spacing: .01em; }
+  .repo a { color: inherit; text-decoration: none; }
+  .hat { display: inline-block; width: 0.9em; height: 0.94em; margin-left: .3em; vertical-align: -0.12em; color: currentColor; }
+  .repo.link2 { margin-top: 36px; }
+  .repo small { display: block; font-size: 21px; letter-spacing: .16em; text-transform: uppercase; color: var(--muted); margin-bottom: 12px; font-weight: 500; }
+</style>
+<script>
+  // ?theme=neutral|light|dark
+  (function () {
+    try {
+      var t = new URLSearchParams(location.search).get("theme");
+      if (t) document.documentElement.setAttribute("data-theme", t);
+    } catch (e) {}
+  })();
+</script>
+</head>
+<body>
+
+<!-- 1. Hook -->
+<section class="slide">
+  <div class="head"><span>AI-Assisted Software Engineering</span><span class="num">01 / 10</span></div>
+  <div class="body">
+    <svg class="bowl" viewBox="0 0 220 170" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M70 52c-10-14 10-22 0-38"/>
+      <path d="M110 52c-10-14 10-22 0-38"/>
+      <path d="M150 52c-10-14 10-22 0-38"/>
+      <path d="M18 78h184"/>
+      <path d="M26 78c4 44 38 72 84 72s80-28 84-72"/>
+      <path d="M84 162h52"/>
+    </svg>
+    <h1 class="hook">
+      <span class="line"><em>Vibe coding</em> is like <em class="nw">vibe cooking</em> at&nbsp;home:<br>experimenting <span class="nw">just for you.</span></span>
+      <span class="line">Engineering is like cooking for guests.</span>
+    </h1>
+    <div class="sub">
+      <p class="strong">When others depend on it, the work changes.</p>
+    </div>
+  </div>
+  <div class="foot"><span>Miguel Morales</span><span class="swipe">&rarr;</span></div>
+</section>
+
+<!-- 2. The question -->
+<section class="slide">
+  <div class="head"><span>AI-Assisted Software Engineering</span><span class="num">02 / 10</span></div>
+  <div class="body">
+    <div class="kicker">Before AI, every team asked:</div>
+    <h1 class="xl">How much engineering discipline can we afford?</h1>
+    <div class="rule"></div>
+    <div class="sub"><p>Architecture, testing, and documentation have always competed with time and cost.</p></div>
+  </div>
+  <div class="foot"><span>Miguel Morales</span><span class="swipe">&rarr;</span></div>
+</section>
+
+<!-- 3. The shift -->
+<section class="slide">
+  <div class="head"><span>AI-Assisted Software Engineering</span><span class="num">03 / 10</span></div>
+  <div class="body">
+    <div class="kicker">Now:</div>
+    <h1>
+      <span class="line">AI lowers the barrier to implementation.</span>
+      <span class="line"><em>But it can help us do the engineering too.</em></span>
+    </h1>
+    <div class="sub">
+      <p>Many of these principles are classic.</p>
+      <p class="strong">What&rsquo;s changed is what it costs to follow them.</p>
+    </div>
+  </div>
+  <div class="foot"><span>Miguel Morales</span><span class="swipe">&rarr;</span></div>
+</section>
+
+<!-- 4. The warning -->
+<section class="slide">
+  <div class="head"><span>AI-Assisted Software Engineering</span><span class="num">04 / 10</span></div>
+  <div class="body">
+    <div class="kicker">The catch:</div>
+    <h1 class="xl">AI can amplify <em>bad</em> engineering just as fast.</h1>
+    <div class="rule"></div>
+    <div class="sub">
+      <p class="strong">More code, more debt, quicker.</p>
+      <p>The goal isn&rsquo;t to constrain AI. It&rsquo;s to direct it.</p>
+    </div>
+  </div>
+  <div class="foot"><span>Miguel Morales</span><span class="swipe">&rarr;</span></div>
+</section>
+
+<!-- 5. Pillar I -->
+<section class="slide pillar">
+  <div class="head"><span>Four pillars</span><span class="num">05 / 10</span></div>
+  <div class="body">
+    <div class="kicker pk">Four ways to direct it:</div>
+    <div class="numeral">I.</div>
+    <div class="pname">Think Before You Generate</div>
+    <div class="anchor"><span class="qm">&ldquo;</span>Build the map before building the roads.<span class="qm">&rdquo;</span></div>
+    <ul class="plist">
+      <li><span class="pn">01</span><span>Design before prompting</span></li>
+      <li><span class="pn">04</span><span>Maintain traceability</span></li>
+    </ul>
+  </div>
+  <div class="foot"><span>Miguel Morales</span><span class="swipe">&rarr;</span></div>
+</section>
+
+<!-- 6. Pillar II -->
+<section class="slide pillar">
+  <div class="head"><span>Four pillars</span><span class="num">06 / 10</span></div>
+  <div class="body">
+    <div class="numeral">II.</div>
+    <div class="pname">Generate Responsibly</div>
+    <div class="anchor"><span class="qm">&ldquo;</span>AI generates. Humans&nbsp;own.<span class="qm">&rdquo;</span></div>
+    <ul class="plist">
+      <li><span class="pn">07</span><span>Treat AI artifacts as engineering artifacts</span></li>
+      <li><span class="pn">08</span><span>Externalize memory</span></li>
+    </ul>
+  </div>
+  <div class="foot"><span>Miguel Morales</span><span class="swipe">&rarr;</span></div>
+</section>
+
+<!-- 7. Pillar III -->
+<section class="slide pillar">
+  <div class="head"><span>Four pillars</span><span class="num">07 / 10</span></div>
+  <div class="body">
+    <div class="numeral">III.</div>
+    <div class="pname">Prove It Works</div>
+    <div class="anchor"><span class="qm">&ldquo;</span>AI optimizes for the happy path. Attackers&nbsp;don&rsquo;t.<span class="qm">&rdquo;</span></div>
+    <ul class="plist">
+      <li><span class="pn">09</span><span>Testing is mandatory</span></li>
+      <li><span class="pn">11</span><span>Build evidence, not just confidence</span></li>
+    </ul>
+  </div>
+  <div class="foot"><span>Miguel Morales</span><span class="swipe">&rarr;</span></div>
+</section>
+
+<!-- 8. Pillar IV -->
+<section class="slide pillar">
+  <div class="head"><span>Four pillars</span><span class="num">08 / 10</span></div>
+  <div class="body">
+    <div class="numeral">IV.</div>
+    <div class="pname">Build for the Future</div>
+    <div class="anchor"><span class="qm">&ldquo;</span>Reuse what compounds. Delete what&nbsp;doesn&rsquo;t.<span class="qm">&rdquo;</span></div>
+    <ul class="plist">
+      <li><span class="pn">13</span><span>Documentation is part of development</span></li>
+      <li><span class="pn">15</span><span>Reduce technical debt as you go</span></li>
+    </ul>
+  </div>
+  <div class="foot"><span>Miguel Morales</span><span class="swipe">&rarr;</span></div>
+</section>
+
+<!-- 9. How to use this -->
+<section class="slide">
+  <div class="head"><span>How to use this</span><span class="num">09 / 10</span></div>
+  <div class="body">
+    <div class="kicker">Ready to move past vibe coding?</div>
+    <h1 class="md">Pick your scale, then make these principles your team&rsquo;s working agreement.</h1>
+    <div class="steps" aria-label="Prototype, product, production">
+      <div class="step s1"><span>Prototype</span></div>
+      <div class="step s2"><span>Product</span></div>
+      <div class="step s3"><span>Production</span></div>
+    </div>
+    <div class="sub" style="margin-top:48px">
+      <p class="strong">Humans and AI agents alike.</p>
+      <p>Scaling down is a decision, not drift.</p>
+    </div>
+  </div>
+  <div class="foot"><span>Miguel Morales</span><span class="swipe">&rarr;</span></div>
+</section>
+
+<!-- 10. Closer -->
+<section class="slide">
+  <div class="head"><span>AI-Assisted Software Engineering</span><span class="num">10 / 10</span></div>
+  <div class="body">
+    <h1 class="xl">Not a methodology. Ideas I&rsquo;m testing.</h1>
+    <div class="sub">
+      <p>Some might be wrong, and I&rsquo;d like them challenged.</p>
+      <p class="oven">First case study is in the oven. More soon.<svg class="hat" viewBox="10 8 44 46" fill="none" stroke="currentColor" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M18 38c-9-1-12-14-3-18 1-9 12-13 18-6 6-7 17-3 18 6 9 4 6 17-3 18"/>
+        <path d="M18 38v14h28V38"/>
+        <path d="M18 44h28"/>
+      </svg></p>
+    </div>
+    <div class="q">What are you seeing?</div>
+    <div class="repo"><small>Full document</small><a href="https://github.com/miguelmog10/ai-assisted-software-engineering">github.com/miguelmog10/ai-assisted-software-engineering</a></div>
+    <div class="repo link2"><small>Connect</small><a href="https://www.linkedin.com/in/miguelmog10">linkedin.com/in/miguelmog10</a></div>
+  </div>
+  <div class="foot"><span>Miguel Morales</span><span class="mark"></span></div>
+</section>
+
+</body>
+</html>

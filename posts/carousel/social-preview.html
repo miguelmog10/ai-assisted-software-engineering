@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>AI-Assisted Software Engineering: social preview</title>
+<!-- GitHub social preview, 1280 x 640 px. Same tokens as carousel.html (neutral theme). Render with render.js. -->
+<style>
+  @font-face { font-family: "Lora"; src: url("fonts/Lora-Variable.ttf") format("truetype"); font-weight: 400 700; font-style: normal; }
+  @font-face { font-family: "Lora"; src: url("fonts/Lora-Italic-Variable.ttf") format("truetype"); font-weight: 400 700; font-style: italic; }
+  @font-face { font-family: "Inter"; src: url("fonts/Inter-Regular.otf") format("opentype"); font-weight: 400; }
+  @font-face { font-family: "Inter"; src: url("fonts/Inter-Medium.otf") format("opentype"); font-weight: 500; }
+  :root { --bg: #E9E5DE; --ink: #22201D; --muted: #57524B; --accent: #9C4426; --rule: #C9C2B7; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 1280px; height: 640px; background: var(--bg); }
+  body { font-family: "Inter", sans-serif; color: var(--ink); -webkit-font-smoothing: antialiased; }
+  .card { width: 1280px; height: 640px; padding: 52px 80px 48px; display: flex; flex-direction: column; }
+  .head, .foot { display: flex; justify-content: space-between; align-items: baseline; color: var(--muted); }
+  .head { font-size: 19px; font-weight: 500; letter-spacing: .16em; text-transform: uppercase; padding-bottom: 22px; border-bottom: 1.5px solid var(--rule); }
+  .foot { font-size: 21px; font-weight: 500; padding-top: 22px; border-top: 1.5px solid var(--rule); }
+  .body { flex: 1; display: flex; flex-direction: column; justify-content: center; }
+  .bowl { width: 120px; height: auto; color: var(--accent); margin-bottom: 30px; }
+  h1 { font-family: "Lora", serif; font-weight: 500; font-size: 56px; line-height: 1.16; letter-spacing: -0.012em; }
+  h1 span { display: block; }
+  h1 em { color: var(--accent); font-style: italic; }
+  .sub { margin-top: 28px; font-size: 28px; color: var(--muted); }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="head"><span>AI-Assisted Software Engineering</span><span style="text-transform:none">v1.0</span></div>
+  <div class="body">
+    <svg class="bowl" viewBox="0 0 220 170" fill="none" stroke="currentColor" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M70 52c-10-14 10-22 0-38"/><path d="M110 52c-10-14 10-22 0-38"/><path d="M150 52c-10-14 10-22 0-38"/>
+      <path d="M18 78h184"/><path d="M26 78c4 44 38 72 84 72s80-28 84-72"/><path d="M84 162h52"/>
+    </svg>
+    <h1>
+      <span><em>Vibe coding</em> is like <em>vibe cooking</em> at home.</span>
+      <span>Engineering is like cooking for guests.</span>
+    </h1>
+    <div class="sub">Principles for Building Sustainable Systems with AI</div>
+  </div>
+  <div class="foot"><span>Miguel Morales</span><span>github.com/miguelmog10/ai-assisted-software-engineering</span></div>
+</div>
+</body>
+</html>
