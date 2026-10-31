@@ -7,9 +7,13 @@ AI has lowered the barrier to implementation without lowering the need for engin
 ## What's here
 
 - [**PRINCIPLES.md**](PRINCIPLES.md): the full document, 16 principles organized around four pillars.
-- [**posts/**](posts): launch post, carousel, and follow-up writing.
+- [**PLAYBOOK.md**](PLAYBOOK.md): how I work with AI agents, as short rules drawn from real projects.
+- [**templates/**](templates): files to copy into your repo (AGENTS.md, handoffs, ADRs, STATUS and more).
 - [**case-studies/**](case-studies): real project walkthroughs where the principles held up (or didn't).
+- [**posts/**](posts): launch post, carousel, and follow-up writing.
 - [**CHANGELOG.md**](CHANGELOG.md): version history of the framework.
+- [**BACKLOG.md**](BACKLOG.md): what's next, and ideas not tested yet.
+- [**AGENTS.md**](AGENTS.md): how AI assistants work on this repo, built from the template.
 
 ## The four pillars
 
@@ -24,7 +28,7 @@ This framework is deliberately a working document. Some ideas will evolve, some 
 
 ## License
 
-[CC BY 4.0](LICENSE): share and adapt freely, with attribution.
+Everything is [CC BY 4.0](LICENSE) (share and adapt freely, with attribution) except [`templates/`](templates), which is [CC0 1.0](templates/LICENSE): copy the templates into your own repo, no attribution needed.
 
 ## Author's note
 

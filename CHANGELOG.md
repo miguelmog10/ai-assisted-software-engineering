@@ -2,6 +2,16 @@
 
 How the thinking in this framework evolves, recorded as it happens.
 
+## [1.1.0] - 2026-10-31
+
+**Playbook and templates for working with AI agents.** The principles are unchanged; this release adds a practical layer on top of them, drawn from Knowledge Automata.
+
+- `PLAYBOOK.md`: ten rules with *must* or *should*, each naming its source and the principle it serves. Every rule is tested at prototype level; product and production are marked "not yet tested". Rules say what must be true, not how to do it.
+- `templates/`: nine templates to copy (AGENTS.md, handoff, ADR, STATUS, backlog, pull request template, principles in practice, tool feedback, costs). Each starts with the version it came from. The folder is CC0 1.0; the rest of the repo stays CC BY 4.0.
+- `AGENTS.md` and `BACKLOG.md` for this repo, built from the templates.
+- README lists the new files and the license split.
+- Markdown now counts in GitHub's language stats (`.gitattributes`, committed after v1.0.0).
+
 ## [1.0.0] - 2026-10-25
 
 **Version 1.0 frozen.** The full document as it will be published:
