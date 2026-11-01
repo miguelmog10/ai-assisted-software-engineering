@@ -1,6 +1,6 @@
 <!--
-From AI-Assisted Software Engineering templates v1.1.0 (CC0 1.0):
-https://github.com/miguelmog10/ai-assisted-software-engineering/tree/v1.1.0/templates
+From AI-Assisted Software Engineering templates v1.2.0 (CC0 1.0):
+https://github.com/miguelmog10/ai-assisted-software-engineering/tree/v1.2.0/templates
 Keep the two lines above. Delete the rest of this comment once you have adapted the file.
 
 Use it: as dev/principles-in-practice.md, a running log kept while you build.
@@ -10,7 +10,7 @@ Serves: P8 (Externalize Memory), P11 (Build Evidence). Playbook: rule 7.
 
 # Principles in practice
 
-A running log of how the [AI-Assisted Software Engineering principles](https://github.com/miguelmog10/ai-assisted-software-engineering/blob/v1.1.0/PRINCIPLES.md) showed up while building this project: where they made the **product** better, where they helped the **team** of humans and AI assistants work together, and where a principle had to **bend**.
+A running log of how the [AI-Assisted Software Engineering principles](https://github.com/miguelmog10/ai-assisted-software-engineering/blob/v1.2.0/PRINCIPLES.md) showed up while building this project: where they made the **product** better, where they helped the **team** of humans and AI assistants work together, and where a principle had to **bend**.
 
 | # | Principle | # | Principle |
 |---|---|---|---|

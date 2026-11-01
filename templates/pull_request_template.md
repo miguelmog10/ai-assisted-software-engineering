@@ -1,11 +1,11 @@
 <!--
-From AI-Assisted Software Engineering templates v1.1.0 (CC0 1.0):
-https://github.com/miguelmog10/ai-assisted-software-engineering/tree/v1.1.0/templates
+From AI-Assisted Software Engineering templates v1.2.0 (CC0 1.0):
+https://github.com/miguelmog10/ai-assisted-software-engineering/tree/v1.2.0/templates
 Keep the two lines above. Delete the rest of this comment once you have adapted the file.
 
 Use it: as .github/pull_request_template.md, so GitHub fills it into every new pull request.
 Filled in by: whoever opens the pull request; the reviewer checks it against the actual changes.
-Serves: P5 (AI Generates. Humans Own.), P6 (Small Increments). Playbook: rules 5, 6 and 8.
+Serves: P5 (AI Generates. Humans Own.), P6 (Small Increments). Playbook: rules 5, 6, 8 and 11.
 -->
 
 ## What
@@ -28,6 +28,7 @@ Serves: P5 (AI Generates. Humans Own.), P6 (Small Increments). Playbook: rules 5
 
 - [ ] Checks and tests pass
 - [ ] Reviewed from the actual changes, not only the agent's summary
+- [ ] Reviewed by someone other than the author (another agent, a fresh session or a human)
 - [ ] Docs updated in the same change
 - [ ] `dev/STATUS.md` and `dev/backlog.md` updated
 - [ ] Cost recorded in `dev/costs.md`

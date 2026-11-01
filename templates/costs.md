@@ -1,6 +1,6 @@
 <!--
-From AI-Assisted Software Engineering templates v1.1.0 (CC0 1.0):
-https://github.com/miguelmog10/ai-assisted-software-engineering/tree/v1.1.0/templates
+From AI-Assisted Software Engineering templates v1.2.0 (CC0 1.0):
+https://github.com/miguelmog10/ai-assisted-software-engineering/tree/v1.2.0/templates
 Keep the two lines above. Delete the rest of this comment once you have adapted the file.
 
 Use it: as dev/costs.md. Track what you can capture easily (agent credits, API spend,

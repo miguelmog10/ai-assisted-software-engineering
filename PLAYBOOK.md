@@ -1,11 +1,13 @@
 # Playbook: Working with AI Agents
 
 **How I work with AI agents, one rule at a time**\
-*Version 1.1.0, October 2026.*
+*Version 1.2.0, November 2026.*
 
 The principles are why I cook the way I do. This playbook is the kitchen routine: what happens, in what order, every time I work with AI agents on a project. It sits on top of [PRINCIPLES.md](PRINCIPLES.md) and comes with [templates](templates/) you can copy into your own repo.
 
 Every rule here comes from a real project, and it names that project. Ideas I haven't tried yet live in [BACKLOG.md](BACKLOG.md), not here.
+
+The rules stay tool-agnostic on purpose. How a specific tool behaves (which instruction files it reads, how its plan mode works) lives in [field-notes/](field-notes/): dated observations, not rules, which can go out of date.
 
 ## How to read this playbook
 
@@ -19,7 +21,7 @@ Every rule here comes from a real project, and it names that project. Ideas I ha
 The first lines of every `AGENTS.md` say the project's scale level and link to the principles and this playbook by release tag. An agent then knows how much process to apply before it reads a single rule.
 
 - Relaxing or tightening a rule is a decision, written down, never drift.
-- Link by release tag (for example `.../blob/v1.1.0/PLAYBOOK.md`), never by `main`. Moving to a newer tag is its own pull request, recorded in STATUS or an ADR.
+- Link by release tag (for example `.../blob/v1.2.0/PLAYBOOK.md`), never by `main`. Moving to a newer tag is its own pull request, recorded in STATUS or an ADR.
 
 Source: Knowledge Automata, whose `AGENTS.md` has a "Deliberately relaxed for v0.1" section (ADR-0008) and pins the principles to a fixed commit. Principles: Scale Deliberately, P14.
 
@@ -39,6 +41,7 @@ Source: Knowledge Automata, whose `AGENTS.md` has a "Deliberately relaxed for v0
 | 8 | Track what the work costs | Should | Not yet tested | Not yet tested | P11 |
 | 9 | Get the owner's go before a real run | Must | Not yet tested | Not yet tested | P5 |
 | 10 | Commit real output as it came out | Should | Not yet tested | Not yet tested | P11 |
+| 11 | Review with a second pair of eyes | Should | Not yet tested | Not yet tested | P5 |
 
 ## The rules
 
@@ -124,6 +127,16 @@ Real output shows what the system actually produces, weak spots included.
 
 Source: Knowledge Automata, `examples/sample-project/`: the first real record was committed with its two weak fields, and the weaknesses went to the backlog. Principle: P11.
 
+### 11. Review with a second pair of eyes
+
+**Should.** Someone other than the author reviews the plan and the changes: another agent, a fresh session or a human.
+
+An agent that checks its own work tends to agree with its own reasoning. A reviewer with its own context brings questions the author never asked, the way a colleague does, or the same person on a different day. Separate contexts also keep each session small.
+
+Example: a pair of agents per handoff. One plans with the owner and reviews. The other implements. The implementer reviews the plan before writing code, the planner reviews the changes and the report, then writes the next handoff.
+
+Source: Knowledge Automata, where Claude planned and reviewed each handoff and Copilot implemented it. Each side caught things the other missed: Copilot's plan reviews alone found six problems in Claude's handoffs before any code was written (rule 1). Whether the benefit comes from different tools or only from separate contexts is not known yet; Kitchen Books tests it with both agents in one tool. Principle: P5.
+
 ## Templates
 
 The [templates/](templates/) folder holds nine files to copy into your repo. They are CC0 1.0, so you can copy them without attribution.
@@ -139,7 +152,7 @@ Source: Knowledge Automata's own files carry project-specific rules that these t
 | [adr.md](templates/adr.md) | `docs/decisions/NNNN-short-title.md` | Rule 2 |
 | [STATUS.md](templates/STATUS.md) | `dev/STATUS.md` | Rule 6 |
 | [backlog.md](templates/backlog.md) | `dev/backlog.md` | Rule 6 |
-| [pull_request_template.md](templates/pull_request_template.md) | `.github/pull_request_template.md` | Rules 5, 6, 8 |
+| [pull_request_template.md](templates/pull_request_template.md) | `.github/pull_request_template.md` | Rules 5, 6, 8, 11 |
 | [principles-in-practice.md](templates/principles-in-practice.md) | `dev/principles-in-practice.md` | Rule 7 |
 | [tool-feedback.md](templates/tool-feedback.md) | `dev/tool-feedback.md` | Rule 7 |
 | [costs.md](templates/costs.md) | `dev/costs.md` | Rule 8 |
