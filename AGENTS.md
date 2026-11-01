@@ -1,6 +1,6 @@
 <!--
-From AI-Assisted Software Engineering templates v1.1.0 (CC0 1.0):
-https://github.com/miguelmog10/ai-assisted-software-engineering/tree/v1.1.0/templates
+From AI-Assisted Software Engineering templates v1.2.0 (CC0 1.0):
+https://github.com/miguelmog10/ai-assisted-software-engineering/tree/v1.2.0/templates
 -->
 
 # AGENTS.md
@@ -28,6 +28,7 @@ The ideas are Miguel's. AI helps structure, polish and pressure-test them.
 - `PRINCIPLES.md`: the why.
 - `PLAYBOOK.md`: the what, as rules with their evidence.
 - `templates/`: files projects copy.
+- `field-notes/`: dated, tool-specific observations. Not rules: when a note and the tool's own docs disagree, the docs win.
 - `case-studies/`: what happened on real projects.
 - `CHANGELOG.md`: what changed in each version.
 - `BACKLOG.md`: what's next and what's deliberately deferred.
@@ -48,7 +49,7 @@ No CI, no automated link or style checks, no review by a second person. Tracked 
 ## Commits
 
 - Conventional Commits, for example `docs:` or `feat(posts):`.
-- AI-assisted commits end with a `Co-Authored-By:` trailer naming the assistant.
+- AI-assisted commits end with a `Co-authored-by:` trailer naming the assistant, spelled exactly like that.
 
 ## Writing style
 

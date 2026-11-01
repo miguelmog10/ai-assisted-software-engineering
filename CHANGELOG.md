@@ -2,6 +2,16 @@
 
 How the thinking in this framework evolves, recorded as it happens.
 
+## [1.2.0] - 2026-11-01
+
+**A second pair of eyes, and field notes.** The principles are unchanged.
+
+- `PLAYBOOK.md`: rule 11, "Review with a second pair of eyes" (should, P5). Someone other than the author reviews the plan and the changes: another agent, a fresh session or a human. Source: the Claude and Copilot pairs on Knowledge Automata.
+- `field-notes/`: dated, tool-specific notes kept apart from the rules, because they go out of date. First note: how Claude Code reads `AGENTS.md` and `CLAUDE.md`.
+- `BACKLOG.md`: new Kitchen Books experiments (one instruction file for every tool, rule 11 inside one tool, Claude Code against rules 1, 4 and 8, parallel handoffs) and untested ideas for a project overseer role. The Knowledge Automata case study moves to v1.3.0.
+- Templates: version lines and links point to v1.2.0. The pull request template adds a checkbox for rule 11.
+- `AGENTS.md`: the commit trailer is spelled `Co-authored-by:`, matching the templates. `field-notes/` added to "Where things live". README lists the new folder.
+
 ## [1.1.0] - 2026-10-31
 
 **Playbook and templates for working with AI agents.** The principles are unchanged; this release adds a practical layer on top of them, drawn from Knowledge Automata.

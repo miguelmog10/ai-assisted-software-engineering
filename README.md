@@ -9,6 +9,7 @@ AI has lowered the barrier to implementation without lowering the need for engin
 - [**PRINCIPLES.md**](PRINCIPLES.md): the full document, 16 principles organized around four pillars.
 - [**PLAYBOOK.md**](PLAYBOOK.md): how I work with AI agents, as short rules drawn from real projects.
 - [**templates/**](templates): files to copy into your repo (AGENTS.md, handoffs, ADRs, STATUS and more).
+- [**field-notes/**](field-notes): dated notes on how specific AI tools behave, kept apart from the rules because they go out of date.
 - [**case-studies/**](case-studies): real project walkthroughs where the principles held up (or didn't).
 - [**posts/**](posts): launch post, carousel, and follow-up writing.
 - [**CHANGELOG.md**](CHANGELOG.md): version history of the framework.

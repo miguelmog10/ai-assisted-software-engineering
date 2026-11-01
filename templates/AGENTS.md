@@ -1,6 +1,6 @@
 <!--
-From AI-Assisted Software Engineering templates v1.1.0 (CC0 1.0):
-https://github.com/miguelmog10/ai-assisted-software-engineering/tree/v1.1.0/templates
+From AI-Assisted Software Engineering templates v1.2.0 (CC0 1.0):
+https://github.com/miguelmog10/ai-assisted-software-engineering/tree/v1.2.0/templates
 Keep the two lines above. Delete the rest of this comment once you have adapted the file.
 
 Use it: at the root of the repo. Every agent and contributor reads it before making a change.
@@ -12,8 +12,8 @@ Replace everything in [brackets]. Keep it to the rules that apply to every chang
 # AGENTS.md
 
 - **Scale level:** [prototype | product | production]
-- **Principles:** [AI-Assisted Software Engineering v1.1.0](https://github.com/miguelmog10/ai-assisted-software-engineering/blob/v1.1.0/PRINCIPLES.md)
-- **Playbook:** [Working with AI Agents v1.1.0](https://github.com/miguelmog10/ai-assisted-software-engineering/blob/v1.1.0/PLAYBOOK.md)
+- **Principles:** [AI-Assisted Software Engineering v1.2.0](https://github.com/miguelmog10/ai-assisted-software-engineering/blob/v1.2.0/PRINCIPLES.md)
+- **Playbook:** [Working with AI Agents v1.2.0](https://github.com/miguelmog10/ai-assisted-software-engineering/blob/v1.2.0/PLAYBOOK.md)
 
 Shared rules for every AI assistant and human contributor working on this repository. Read this before making any change.
 
