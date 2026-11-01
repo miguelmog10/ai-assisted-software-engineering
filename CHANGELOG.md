@@ -2,6 +2,10 @@
 
 How the thinking in this framework evolves, recorded as it happens.
 
+## [Unreleased]
+
+- The `v1.2.0` tag was first created on the v1.1.0 commit: it was made after switching back to `main`, before the release branch was merged. It was moved to the merged release commit (`d2c957d`) the same day, 2026-11-01, so links to `v1.2.0` now show rule 11 and the field notes. The tag ruleset was disabled for this one fix and turned back on right after.
+
 ## [1.2.0] - 2026-11-01
 
 **A second pair of eyes, and field notes.** The principles are unchanged.
