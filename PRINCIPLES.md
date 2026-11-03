@@ -414,7 +414,7 @@ The opportunity isn't simply to remove engineering from software development. It
 
 The goal isn't simply more software, but better systems, built faster.
 
-The landscape is changing fast, and this document should be read with that in mind. There is an analogy from the AI academia world: AI is like water filling valleys and mountains, and as time passes, the water level rises and covers more peaks. The same may happen here. Continuous advances in AI tools, new architectures, better system prompts, and specialized agents across the software development lifecycle may by default bring many of the good standards advocated in this document.
+The landscape is changing fast, and this document should be read with that in mind. The roboticist Hans Moravec described it back in 1998, in "When will computer hardware match the human brain?": a landscape of human competence, where the lowlands are tasks that are easy for computers and the peaks are the hard ones, and advancing computer performance is like water slowly flooding it. As time passes, the water level rises and covers more peaks. The same may happen here. Continuous advances in AI tools, new architectures, better system prompts, and specialized agents across the software development lifecycle may by default bring many of the good standards advocated in this document.
 
 That does not make writing them down pointless. Written principles align a team of humans and AI alike on how we collaborate, on what we expect from each other, and on how we scale these pillars down explicitly for the context of a given project or team. The landscape will keep changing, but it never hurts to document good engineering principles.
 
@@ -426,4 +426,4 @@ This document was developed with the help of AI tools.
 
 I used them to brainstorm, explore alternatives, challenge assumptions, structure ideas, and refine the writing. The experiences, observations, decisions, and perspective behind the document are my own.
 
-In that sense, the document is also an experiment in the approach it describes. The first case study is in the oven. More soon.
+In that sense, the document is also an experiment in the approach it describes. The first case study is out of the oven: [Knowledge Automata](https://github.com/miguelmog10/knowledge-automata). The full write-up is coming.

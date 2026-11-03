@@ -2,6 +2,15 @@
 
 How the thinking in this framework evolves, recorded as it happens.
 
+## [1.2.1] - 2026-11-03
+
+**A credit, and the first case study out of the oven.** The principles are unchanged.
+
+- `PRINCIPLES.md`: the water-level analogy is credited to Hans Moravec (1998). The closing line now points to the first case study, Knowledge Automata.
+- `case-studies/README.md`: the first case study is out of the oven, with a link to Knowledge Automata. The full write-up stays planned for v1.3.0.
+- `BACKLOG.md`: the Moravec credit is done, the Karpathy credit waits for a better place, and the second LinkedIn post now follows the case study, on 2026-11-05.
+- The `v1.2.0` tag was first created on the v1.1.0 commit: it was made after switching back to `main`, before the release branch was merged. It was moved to the merged release commit (`d2c957d`) the same day, 2026-11-01, so links to `v1.2.0` now show rule 11 and the field notes. The tag ruleset was disabled for this one fix and turned back on right after.
+
 ## [1.2.0] - 2026-11-01
 
 **A second pair of eyes, and field notes.** The principles are unchanged.

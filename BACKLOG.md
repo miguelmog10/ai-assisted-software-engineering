@@ -9,7 +9,7 @@ https://github.com/miguelmog10/ai-assisted-software-engineering/tree/v1.2.0/temp
 
 - **Knowledge Automata case study** in `case-studies/knowledge-automata.md`, built from an interview with Miguel and the project's own files (journal, `dev/principles-in-practice.md`, `dev/tool-feedback.md`, `dev/costs.md`). Sections: goal, setup, what worked, what failed, what it cost, and how it evolved. Raw lessons stay in Knowledge Automata; the case study links to them by commit until Knowledge Automata has a release tag, and records the handoff where it switched to the templates. (Moved from v1.2.0, so Kitchen Books could start on rule 11 without waiting.)
 - **Kitchen Books** uses the v1.2.0 templates from handoff 001, built entirely in Claude Code. Lessons that hold on this second project are candidates to become playbook changes or principles.
-- **A second LinkedIn post** once the case study is ready.
+- **A second LinkedIn post** revealing Knowledge Automata, built from the case study, planned for 2026-11-05.
 
 ## Experiments for Kitchen Books
 
@@ -41,7 +41,7 @@ Today Miguel plays this role himself, helped by the handoffs. Nothing here is te
 
 - Lessons from an earlier handoff: chat compaction, "AI is a second opinion, not an authority", naming roles by tool, and examples for each principle. (Running logs are now playbook rule 7.)
 - Principle 14's anchor quote nearly duplicates Principle 7's.
-- Credit Moravec for the water and landscape analogy, and Karpathy for "vibe coding".
+- Credit Karpathy for "vibe coding" somewhere it reads as the compliment it is, not next to "bad" (held back in v1.2.1).
 
 ## Open questions
 
