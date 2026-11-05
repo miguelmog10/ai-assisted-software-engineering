@@ -6,7 +6,7 @@ In my [first post](https://www.linkedin.com/posts/miguelmog10_ai-assisted-softwa
 
 Knowledge Automata is an open-source project I built in my personal time with a small team of AI agents, over two weekends and some late nights. It was the first real test of those principles. What I learned surprised me: my agents kept me closer to my own principles.
 
-This is a story first. The numbers are here too, each linked to the file it came from, and so is what went wrong. Each lesson is tagged with the principle it tested (P1 to P16). Links point to Knowledge Automata [as it stood on November 2, 2026](https://github.com/miguelmog10/knowledge-automata/tree/0cb5d1d), so they won't change as the project grows.
+This is a story first, but the numbers are here too, each linked to the file it came from, along with what went wrong. Each lesson is tagged with the principle it tested (P1 to P16). Links point to Knowledge Automata [as it stood on November 2, 2026](https://github.com/miguelmog10/knowledge-automata/tree/0cb5d1d), so they won't change as the project grows.
 
 ## 2. Goal
 
@@ -32,21 +32,23 @@ It runs on Command, Embed and Rerank from Cohere, the Canadian AI company. They 
 
 ### The real goal
 
-The project had a second goal, and for this case study it is the main one: to test the 16 principles on a real build. Not a toy, but not a product either. I set the scale on purpose at prototype level ([ADR-0008](https://github.com/miguelmog10/knowledge-automata/blob/0cb5d1d/docs/decisions/0008-light-engineering-standard-for-v0-1.md)), applying the principles at a level that fits it. That was a deliberate bend of P11: the full standard of evidence didn't fit a weekend build, so the deferred items are tracked instead of ignored.
+The project had a second goal: to test the 16 principles on a real build. Not a vibe-coded product, but not a full-fledge product either. I set the scale on purpose at prototype level ([ADR-0008](https://github.com/miguelmog10/knowledge-automata/blob/0cb5d1d/docs/decisions/0008-light-engineering-standard-for-v0-1.md)), applying the principles at a level that fits it. That was a deliberate bend of P11: the full standard of evidence didn't fit a weekend build, so the deferred items are tracked instead of ignored.
 
 ## 3. Setup
 
 ### Pointing the agents at the principles
 
-On Saturday, October 24, I opened an empty repository. I had the principles, as I published them, and nothing else: no playbook, no templates, no instruction files. I already knew about instruction files like `AGENTS.md`, and that each tool can have its own. My plan was to research them all and pack the principles into each one. Then I changed my mind.
+On Saturday, October 24, I opened an empty repository. I had the principles, as I published them, and nothing else: no playbook, no templates, no instruction files. Before working with my agents, I reflected on how to communicate the principles to them.
 
-> Instead of extracting this information and repeating it to the agents, I'm just going to point them there.
+If you work with agents every day, this will look familiar. Over the past two years, I climbed the usual ladder: copying context manually into each chat, then carrying a notes file or a backlog from session to session, then writing agent instructions, then using instruction files like `AGENTS.md` that tools read on their own.
 
-So I pointed the agents at the principles and asked them what they needed. The project's [`AGENTS.md`](https://github.com/miguelmog10/knowledge-automata/blob/0cb5d1d/AGENTS.md) links to the principles and refers to them by number. That one link was the whole method.
+My plan was to research what I needed for the different platforms and pack the principles into each one. Then I changed my mind.
 
-If you work with agents every day, this will look familiar. Over two years, I climbed the usual ladder: copying context into each chat, then carrying a notes file or a backlog from session to session, then writing agent instructions, then files like `AGENTS.md` that tools read on their own. Pointing at a versioned repo of principles was one more step. The principles live apart from any tool's files. I can negotiate them with the agents, branch them and make them my own, and the agents write whatever files each tool needs. Tools will change; the way of working stays. That separation is the part I'd point to, and so far it is tested on one project.
+> Instead of extracting this information and repeating it to the agents, I'm just going to point them there!
 
-I hadn't planned what came next. It was so organic. I brainstormed, the agents suggested formats, and we kept what worked for humans and AIs alike: handoff files, architecture decision records (ADRs), a STATUS page, a backlog and two running logs. I didn't design that system up front. It grew from one link, and section 7 shows what it grew into.
+So I pointed the agents at the principles and asked them what they needed. I hadn't planned what came next. It was so organic. We brainstormed together, the agents suggested what was best for them and our collaboration, for instance having the project's [`AGENTS.md`](https://github.com/miguelmog10/knowledge-automata/blob/0cb5d1d/AGENTS.md) linking to the principles and referring to them by number. We also kept what worked for humans and AIs alike: handoff files, architecture decision records (ADRs), a STATUS page, a backlog and two running logs. I didn't design that system up front. It grew from that one link, and section 7 shows what it grew into.
+
+That one link was the whole method: pointing at a versioned repo of principles was one more step in the ladder. The principles live apart from any tool's files. Before each project, I can negotiate them with the agents, branch them and make them my own, and the agents write whatever files each tool needs. Tools will change; the way of working stays. That separation is the part I'd point to, and so far it is tested on one project.
 
 ### The team
 
@@ -91,7 +93,7 @@ Each handoff works like an epic:
 
 ### The product, and the way we worked
 
-Good teams improve two things: the product and the way they work. Of the four pillars, the one that helped me most was the second, Generate responsibly, through one principle in it: treat AI artifacts as engineering artifacts (P7).
+Good teams improve two things: the product and the way they work. Of the four pillars, the one that helped me most was the second, Generate responsibly, through one principle in particular: treat AI artifacts as engineering artifacts (P7).
 
 I applied it to the process as well as the product. The handoffs, the running logs, STATUS, the backlog and `AGENTS.md` were committed, reviewed and improved like code. Because they lived in the repo and not in chats (P8), every improvement stuck. And because they stuck, they compounded (P16). That is what turned an organic experiment into a cycle that keeps improving itself.
 
@@ -149,9 +151,9 @@ The principles weren't rigid, and they shouldn't be. When the process becomes th
 
 ### How much engineering discipline can we afford?
 
-In my first post I wrote that the quiet question was always: how much engineering discipline can we afford?
+In my first post I wrote that the quiet question was always: **how much engineering discipline can we afford?** Turns out, quite a lot! 
 
-Turns out, quite a lot. I built this alone with my agents, as a robotics engineer and not a traditional software developer, after years spent more on managing than on implementing. Alone, I'd probably still be setting up the repo.
+I'm a robotics engineer, not a traditional software developer, and in recent years I have spent more time managing than implementing, but I was able to build this alone with my agents, relatively quickly. Alone, I'd probably still be setting up the repo 😅.
 
 ## 5. What failed: where systems meet
 
