@@ -32,7 +32,7 @@ It runs on Command, Embed and Rerank from Cohere, the Canadian AI company. They 
 
 ### The real goal
 
-The project had a second goal: to test the 16 principles on a real build. Not a vibe-coded product, but not a full-fledge product either. I set the scale on purpose at prototype level ([ADR-0008](https://github.com/miguelmog10/knowledge-automata/blob/0cb5d1d/docs/decisions/0008-light-engineering-standard-for-v0-1.md)), applying the principles at a level that fits it. That was a deliberate bend of P11: the full standard of evidence didn't fit a weekend build, so the deferred items are tracked instead of ignored.
+The project had a second goal: to test the 16 principles on a real build. Not a vibe-coded product, but not a full-fledged product either. I set the scale on purpose at prototype level ([ADR-0008](https://github.com/miguelmog10/knowledge-automata/blob/0cb5d1d/docs/decisions/0008-light-engineering-standard-for-v0-1.md)), applying the principles at a level that fits it. That was a deliberate bend of P11: the full standard of evidence didn't fit a weekend build, so the deferred items are tracked instead of ignored.
 
 ## 3. Setup
 
@@ -46,9 +46,9 @@ My plan was to research what I needed for the different platforms and pack the p
 
 > Instead of extracting this information and repeating it to the agents, I'm just going to point them there!
 
-So I pointed the agents at the principles and asked them what they needed. I hadn't planned what came next. It was so organic. We brainstormed together, the agents suggested what was best for them and our collaboration, for instance having the project's [`AGENTS.md`](https://github.com/miguelmog10/knowledge-automata/blob/0cb5d1d/AGENTS.md) linking to the principles and referring to them by number. We also kept what worked for humans and AIs alike: handoff files, architecture decision records (ADRs), a STATUS page, a backlog and two running logs. I didn't design that system up front. It grew from that one link, and section 7 shows what it grew into.
+So I pointed the agents at the principles and asked them what they needed. I hadn't planned what came next. It was so organic. We brainstormed together, and the agents suggested what worked best for them and for our collaboration: for instance, a project [`AGENTS.md`](https://github.com/miguelmog10/knowledge-automata/blob/0cb5d1d/AGENTS.md) that links to the principles and refers to them by number. We also kept what worked for humans and AIs alike: handoff files, architecture decision records (ADRs), a STATUS page, a backlog and two running logs. I didn't design that system up front. It grew from that one link, and section 7 shows what it grew into.
 
-That one link was the whole method: pointing at a versioned repo of principles was one more step in the ladder. The principles live apart from any tool's files. Before each project, I can negotiate them with the agents, branch them and make them my own, and the agents write whatever files each tool needs. Tools will change; the way of working stays. That separation is the part I'd point to, and so far it is tested on one project.
+That one link was the whole method: pointing at a versioned repo of principles was one more step on the ladder. The principles live apart from any tool's files. Before each project, I can negotiate them with the agents, branch them and make them my own, and the agents write whatever files each tool needs. Tools will change; the way of working stays. That separation is the part I'd point to, and so far it is tested on one project.
 
 ### The team
 
@@ -153,7 +153,7 @@ The principles weren't rigid, and they shouldn't be. When the process becomes th
 
 In my first post I wrote that the quiet question was always: **how much engineering discipline can we afford?** Turns out, quite a lot! 
 
-I'm a robotics engineer, not a traditional software developer, and in recent years I have spent more time managing than implementing, but I was able to build this alone with my agents, relatively quickly. Alone, I'd probably still be setting up the repo 😅.
+I'm a robotics engineer, not a traditional software developer, and in recent years I have spent more time managing than implementing, but I was able to build this alone with my agents, relatively quickly. Without them, I'd probably still be setting up the repo 😅.
 
 ## 5. What failed: where systems meet
 
