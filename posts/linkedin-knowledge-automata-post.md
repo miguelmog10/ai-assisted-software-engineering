@@ -6,7 +6,7 @@ It runs on @Cohere: Command for the language model, Embed and Rerank for search.
 
 It was the first real test of my 16 principles. As in any project with agents, I was going to start by writing instruction files, such as AGENTS.md. Instead, I pointed the agents at the principles repo, we negotiated what we needed, and they wrote the files themselves, linked to the principles. What grew from there was so organic! A way of working that kept improving itself, with every lesson written down for the next session. The side effect that surprised me most: my agents kept me closer to my own principles.
 
-At the start of any project, everyone agrees on good practices. Two months later, busy with the work, we forget. Human attention is limited, and discipline is expensive. Sometimes it doesn't even feel feasible. Here I saw the opposite. My agents reread the rules every time, in seconds. When I drifted, they pushed back: that's out of scope, according to the backlog. I'd already said it. I'd just forgotten. They kept me accountable to my own decisions.
+At the start of any project, everyone agrees on good practices. One month later, busy with the work, we forget. Human attention is limited, and discipline is expensive. Sometimes it doesn't even feel feasible. Here I saw the opposite. My agents reread the rules every time, in seconds. When I drifted, they pushed back: that's out of scope, according to the backlog. I'd already said it. I'd just forgotten. They kept me accountable to my own decisions.
 
 We externalized the project's memory, and its process too.
 
