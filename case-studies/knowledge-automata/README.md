@@ -107,7 +107,7 @@ Every example below comes from the project's [principles in practice log](https:
 
 > Reading is remembering.
 
-At the start of any project, everyone agrees on good practices. Two months later, busy with the work, people forget. Attention is limited, and checking every action against the rules by hand would take forever. The agents reread the rules on every pass, in seconds, so following them stopped costing me attention. If I said it, I should do it (P3).
+At the start of any project, everyone agrees on good practices. One month later, busy with the work, people forget. Attention is limited, and checking every action against the rules by hand would take forever. The agents reread the rules on every pass, in seconds, so following them stopped costing me attention. If I said it, I should do it (P3).
 
 The principles weren't rigid, and they shouldn't be. When the process becomes the goal, teams forget they're there to deliver a product. When a principle didn't fit, the agents helped me bend it on purpose and write down why. That's the difference between adapting a rule and quietly forgetting it. And because every bend is recorded, anyone can see later what changed and why, which is the kind of trail regulated fields like aerospace depend on.
 
