@@ -28,7 +28,7 @@ A record is shared truth that everyone can see and agree on. It shows who owns e
 
 It is working, not finished. Built today: the Sensor (intake) and the Artifact Ledger, the Governor (orchestrator), the Decision Registrar, the Comparator (reconciliation), and the Operator (human in the loop). Planned: the Risk Registrar, the Observer and the Oracle. Before v0.1.0 it still needs the Risk Registrar and an evaluation set.
 
-It runs on Command, Embed and Rerank from Cohere, the Canadian AI company. They sit behind a [provider-neutral service layer](https://github.com/miguelmog10/knowledge-automata/blob/0cb5d1d/docs/decisions/0003-provider-agnostic-llm-service-layer.md), so in the future the provider can change, or several can be mixed, without a redesign.
+It runs on Cohere, the Canadian AI company: Command for the language model, Embed and Rerank for search. They sit behind a [provider-neutral service layer](https://github.com/miguelmog10/knowledge-automata/blob/0cb5d1d/docs/decisions/0003-provider-agnostic-llm-service-layer.md), so in the future the provider can change, or several can be mixed, without a redesign.
 
 ### The real goal
 
@@ -107,7 +107,7 @@ Every example below comes from the project's [principles in practice log](https:
 
 > Reading is remembering.
 
-At the start of a project, everyone agrees on good practice. Two weeks later, busy with the work, people forget. Attention is limited, and checking every action against the rules by hand would take forever. The agents reread the rules on every pass, in seconds, so following them stopped costing me attention. If I said it, I should do it (P3).
+At the start of any project, everyone agrees on good practices. Two months later, busy with the work, people forget. Attention is limited, and checking every action against the rules by hand would take forever. The agents reread the rules on every pass, in seconds, so following them stopped costing me attention. If I said it, I should do it (P3).
 
 The principles weren't rigid, and they shouldn't be. When the process becomes the goal, teams forget they're there to deliver a product. When a principle didn't fit, the agents helped me bend it on purpose and write down why. That's the difference between adapting a rule and quietly forgetting it. And because every bend is recorded, anyone can see later what changed and why, which is the kind of trail regulated fields like aerospace depend on.
 
@@ -127,7 +127,7 @@ The principles weren't rigid, and they shouldn't be. When the process becomes th
 
 **One strong model, start to finish.** Both agents ran Claude Opus 5.5 for the whole project, so I never had to switch models or juggle costs mid-task. That won't always be possible, and model choice still matters for cost, but here the tool friction was very low.
 
-**A platform agents can read.** Cohere was easy to set up, and its docs are openly accessible, so my agents could read them directly with no login in the way. Embed and Rerank answered in under 0.21 s in the real run.
+**A platform agents can read.** The Cohere stack was smooth to work with, and the best part was the open docs: my agents could read them directly, with no login in the way. Embed and Rerank answered in under 0.21 s in the real run.
 
 ### More examples, for the curious
 
