@@ -46,7 +46,7 @@ My plan was to research what I needed for the different platforms and pack the p
 
 > Instead of extracting this information and repeating it to the agents, I'm just going to point them there!
 
-So I pointed the agents at the principles and asked them what they needed. I hadn't planned what came next. It was so organic. We brainstormed together, and the agents suggested what worked best for them and for our collaboration: for instance, a project [`AGENTS.md`](https://github.com/miguelmog10/knowledge-automata/blob/0cb5d1d/AGENTS.md) that links to the principles and refers to them by number. We also kept what worked for humans and AIs alike: handoff files, architecture decision records (ADRs), a STATUS page, a backlog and two running logs. I didn't design that system up front. It grew from that one link, and section 7 shows what it grew into.
+So I pointed the agents at the principles and asked them what they needed. I hadn't planned what came next. It was so organic. We brainstormed together, and the agents suggested and wrote what worked best for them and for our collaboration: for instance, a project [`AGENTS.md`](https://github.com/miguelmog10/knowledge-automata/blob/0cb5d1d/AGENTS.md) that links to the principles and refers to them by number. We also kept what worked for humans and AIs alike: handoff files, architecture decision records (ADRs), a STATUS page, a backlog and two running logs. I didn't design that system up front. It grew from that one link, and section 7 shows what it grew into.
 
 That one link was the whole method: pointing at a versioned repo of principles was one more step on the ladder. The principles live apart from any tool's files. Before each project, I can negotiate them with the agents, branch them and make them my own, and the agents write whatever files each tool needs. Tools will change; the way of working stays. That separation is the part I'd point to, and so far it is tested on one project.
 
@@ -95,7 +95,7 @@ Each handoff works like an epic:
 
 Good teams improve two things: the product and the way they work. Of the four pillars, the one that helped me most was the second, Generate responsibly, through one principle in particular: treat AI artifacts as engineering artifacts (P7).
 
-I applied it to the process as well as the product. The handoffs, the running logs, STATUS, the backlog and `AGENTS.md` were committed, reviewed and improved like code. Because they lived in the repo and not in chats (P8), every improvement stuck. And because they stuck, they compounded (P16). That is what turned an organic experiment into a cycle that keeps improving itself.
+I applied it to the process as well as the product. The handoffs, the running logs, STATUS, the backlog and `AGENTS.md` were committed, reviewed and improved like code. We externalized the project’s memory, and its process too, because they lived in the repo and not in chats (P8), every improvement stuck. And because they stuck, they compounded (P16). That is what turned an organic experiment into a cycle that keeps improving itself.
 
 Every example below comes from the project's [principles in practice log](https://github.com/miguelmog10/knowledge-automata/blob/0cb5d1d/dev/principles-in-practice.md), a running record of each time a principle shaped the work.
 
