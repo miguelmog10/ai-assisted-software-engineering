@@ -5,11 +5,10 @@ https://github.com/miguelmog10/ai-assisted-software-engineering/tree/v1.2.0/temp
 
 # Backlog
 
-## Now (v1.3.0)
+## Now
 
-- **Knowledge Automata case study** in `case-studies/knowledge-automata.md`, built from an interview with Miguel and the project's own files (journal, `dev/principles-in-practice.md`, `dev/tool-feedback.md`, `dev/costs.md`). Sections: goal, setup, what worked, what failed, what it cost, and how it evolved. Raw lessons stay in Knowledge Automata; the case study links to them by commit until Knowledge Automata has a release tag, and records the handoff where it switched to the templates. (Moved from v1.2.0, so Kitchen Books could start on rule 11 without waiting.)
 - **Kitchen Books** uses the v1.2.0 templates from handoff 001, built entirely in Claude Code. Lessons that hold on this second project are candidates to become playbook changes or principles.
-- **A second LinkedIn post** revealing Knowledge Automata, built from the case study, planned for 2026-11-05.
+- **A second LinkedIn post** revealing Knowledge Automata, built from the case study and ready in `posts/`. It goes out after v1.3.0 is released.
 
 ## Experiments for Kitchen Books
 
@@ -18,7 +17,8 @@ https://github.com/miguelmog10/ai-assisted-software-engineering/tree/v1.2.0/temp
 - **Rule 11 inside one tool.** Run the planner and the implementer as separate Claude Code sessions. Do they catch as much as Claude and Copilot did on Knowledge Automata? This tells whether the benefit comes from different tools or only from separate contexts.
 - **Claude Code against rules 1, 4 and 8.** Does plan mode replace the plan step in the handoff (rule 1)? Is verifying written files still needed when the implementer edits the repo directly (rule 4)? What is a useful cost measure on a subscription with no per-pull-request credits (rule 8)?
 - **Parallel handoffs.** When two implementers work at the same time, each on its own branch or worktree, does the handoff need to say which files and folders each one owns?
-- **Human and Claude time.** Log the time spent per handoff next to the agent credits in `dev/costs.md`.
+- **All three costs.** Log the agent credits, the subscription use and the human time per handoff in `dev/costs.md`. The Knowledge Automata case study could measure only the credits.
+- **Slow down at the critical areas.** Both failures in the Knowledge Automata case study happened where systems meet: an API and a tool handoff. Agents move faster than people can absorb. Name the critical areas up front (APIs, integrations, handoffs, security), have the agents flag new ones, and slow down there on purpose. Does it catch problems earlier without slowing everything else?
 
 ## Ideas not tried yet: an overseer role
 
@@ -32,6 +32,7 @@ Today Miguel plays this role himself, helped by the handoffs. Nothing here is te
 
 - **Filled-in examples** next to each template, taken from a real project and redacted where needed. Until then, the case study links to Knowledge Automata's real files.
 - **Product and production evidence** for each playbook rule, from a project that runs at those levels.
+- **Compare the principles in practice logs** across five to ten projects, to see which principles hold everywhere and which held for one project only.
 - **Practices Knowledge Automata recommends but hasn't tried yet:** a trailer check in CI, a session-close checklist or skill, and a changelog generated from Conventional Commits.
 - **Per-file license tags** ([REUSE](https://reuse.software/)) if the folder rule for `templates/` stops being enough.
 - **Checks for this repo:** a link check and an em dash check in CI.

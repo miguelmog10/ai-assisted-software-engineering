@@ -32,7 +32,7 @@ The ideas are Miguel's. AI helps structure, polish and pressure-test them.
 - `case-studies/`: what happened on real projects.
 - `CHANGELOG.md`: what changed in each version.
 - `BACKLOG.md`: what's next and what's deliberately deferred.
-- `posts/`: LinkedIn posts and the carousel source.
+- `posts/`: LinkedIn and X posts, and the carousel source.
 
 ## Non-negotiables
 
