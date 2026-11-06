@@ -2,6 +2,16 @@
 
 How the thinking in this framework evolves, recorded as it happens.
 
+## [1.3.0] - 2026-11-06
+
+**The first case study.** The principles are unchanged.
+
+- `case-studies/knowledge-automata/`: the Knowledge Automata case study. Goal, setup, what worked (one example per pillar), what failed, what it cost, how the way of working evolved, and what it doesn't prove yet. Built from an interview with Miguel and the project's own logs. Links point to Knowledge Automata v0.0.1, its first pre-release.
+- `case-studies/README.md`: each entry links the case study first, then the project's own repo.
+- `PRINCIPLES.md`: the closing line points to the write-up.
+- `posts/`: the second LinkedIn post and its first comment (`linkedin-knowledge-automata-post.md`, `linkedin-knowledge-automata-comment.md`), and `x-launch-thread.md`, the launch post adapted as an eight-post thread on X (posted 2026-11-05).
+- `BACKLOG.md`: the case study is done. Two ideas from it join the experiments for the next project: slowing down at the critical areas, and measuring all three costs.
+
 ## [1.2.1] - 2026-11-03
 
 **A credit, and the first case study out of the oven.** The principles are unchanged.

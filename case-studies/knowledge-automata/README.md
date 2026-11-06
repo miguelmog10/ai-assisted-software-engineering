@@ -6,7 +6,7 @@ In my [first post](https://www.linkedin.com/posts/miguelmog10_ai-assisted-softwa
 
 Knowledge Automata is an open-source project I built in my personal time with a small team of AI agents, over two weekends and some late nights. It was the first real test of those principles. What I learned surprised me: my agents kept me closer to my own principles.
 
-This is a story first, but the numbers are here too, each linked to the file it came from, along with what went wrong. Each lesson is tagged with the principle it tested (P1 to P16). Links point to Knowledge Automata [as it stood on November 2, 2026](https://github.com/miguelmog10/knowledge-automata/tree/0cb5d1d), so they won't change as the project grows.
+This is a story first, but the numbers are here too, each linked to the file it came from, along with what went wrong. Each lesson is tagged with the principle it tested (P1 to P16). Links point to Knowledge Automata as of its first pre-release, [v0.0.1](https://github.com/miguelmog10/knowledge-automata/releases/tag/v0.0.1), so they won't change as the project grows.
 
 ## 2. Goal
 
@@ -26,13 +26,13 @@ A record is shared truth that everyone can see and agree on. It shows who owns e
 
 ### What it does today
 
-It is working, not finished. Built today: the Sensor (intake) and the Artifact Ledger, the Governor (orchestrator), the Decision Registrar, the Comparator (reconciliation), and the Operator (human in the loop). Planned: the Risk Registrar, the Observer and the Oracle. Before v0.1.0 it still needs the Risk Registrar and an evaluation set.
+It is working, not finished. Built today: the Sensor (intake) and the Artifact Ledger, the Governor (orchestrator), the Decision Registrar, the Comparator (reconciliation), and the Operator (human in the loop). Planned: the Risk Registrar, the Observer and the Oracle. Its first pre-release, [v0.0.1](https://github.com/miguelmog10/knowledge-automata/releases/tag/v0.0.1), came out on November 6 with the JSON fix from section 5. Before v0.1.0 it still needs the Risk Registrar and an evaluation set.
 
-It runs on Cohere, the Canadian AI company: Command for the language model, Embed and Rerank for search. They sit behind a [provider-neutral service layer](https://github.com/miguelmog10/knowledge-automata/blob/0cb5d1d/docs/decisions/0003-provider-agnostic-llm-service-layer.md), so in the future the provider can change, or several can be mixed, without a redesign.
+It runs on Cohere, the Canadian AI company: Command for the language model, Embed and Rerank for search. They sit behind a [provider-neutral service layer](https://github.com/miguelmog10/knowledge-automata/blob/v0.0.1/docs/decisions/0003-provider-agnostic-llm-service-layer.md), so in the future the provider can change, or several can be mixed, without a redesign.
 
 ### The real goal
 
-The project had a second goal: to test the 16 principles on a real build. Not a vibe-coded product, but not a full-fledged product either. I set the scale on purpose at prototype level ([ADR-0008](https://github.com/miguelmog10/knowledge-automata/blob/0cb5d1d/docs/decisions/0008-light-engineering-standard-for-v0-1.md)), applying the principles at a level that fits it. That was a deliberate bend of P11: the full standard of evidence didn't fit a weekend build, so the deferred items are tracked instead of ignored.
+The project had a second goal: to test the 16 principles on a real build. Not a vibe-coded product, but not a full-fledged product either. I set the scale on purpose at prototype level ([ADR-0008](https://github.com/miguelmog10/knowledge-automata/blob/v0.0.1/docs/decisions/0008-light-engineering-standard-for-v0-1.md)), applying the principles at a level that fits it. That was a deliberate bend of P11: the full standard of evidence didn't fit a weekend build, so the deferred items are tracked instead of ignored.
 
 ## 3. Setup
 
@@ -46,7 +46,7 @@ My plan was to research what I needed for the different platforms and pack the p
 
 > Instead of extracting this information and repeating it to the agents, I'm just going to point them there!
 
-So I pointed the agents at the principles and asked them what they needed. I hadn't planned what came next. It was so organic. We brainstormed together, and the agents suggested and wrote what worked best for them and for our collaboration: for instance, a project [`AGENTS.md`](https://github.com/miguelmog10/knowledge-automata/blob/0cb5d1d/AGENTS.md) that links to the principles and refers to them by number. We also kept what worked for humans and AIs alike: handoff files, architecture decision records (ADRs), a STATUS page, a backlog and two running logs. I didn't design that system up front. It grew from that one link, and section 7 shows what it grew into.
+So I pointed the agents at the principles and asked them what they needed. I hadn't planned what came next. It was so organic. We brainstormed together, and the agents suggested and wrote what worked best for them and for our collaboration: for instance, a project [`AGENTS.md`](https://github.com/miguelmog10/knowledge-automata/blob/v0.0.1/AGENTS.md) that links to the principles and refers to them by number. We also kept what worked for humans and AIs alike: handoff files, architecture decision records (ADRs), a STATUS page, a backlog and two running logs. I didn't design that system up front. It grew from that one link, and section 7 shows what it grew into.
 
 That one link was the whole method: pointing at a versioned repo of principles was one more step on the ladder. The principles live apart from any tool's files. Before each project, I can negotiate them with the agents, branch them and make them my own, and the agents write whatever files each tool needs. Tools will change; the way of working stays. That separation is the part I'd point to, and so far it is tested on one project.
 
@@ -85,9 +85,10 @@ Each handoff works like an epic:
 | Started | Saturday, October 24, 2026, from an empty folder |
 | Last merge | Handoff 007, Sunday, November 1, 2026 ([PR #15](https://github.com/miguelmog10/knowledge-automata/pull/15)) |
 | Handoffs | 7, every pull request reviewed before I merged it |
+| Follow-up | Handoff 008, the JSON fix, released as [v0.0.1](https://github.com/miguelmog10/knowledge-automata/releases/tag/v0.0.1) on Friday, November 6, 2026 ([PR #19](https://github.com/miguelmog10/knowledge-automata/pull/19)) |
 | Tests | 951, all offline, with the network blocked |
-| Decisions recorded | 18 [ADRs](https://github.com/miguelmog10/knowledge-automata/tree/0cb5d1d/docs/decisions) |
-| Scale | Prototype, on purpose ([ADR-0008](https://github.com/miguelmog10/knowledge-automata/blob/0cb5d1d/docs/decisions/0008-light-engineering-standard-for-v0-1.md)) |
+| Decisions recorded | 18 [ADRs](https://github.com/miguelmog10/knowledge-automata/tree/v0.0.1/docs/decisions) |
+| Scale | Prototype, on purpose ([ADR-0008](https://github.com/miguelmog10/knowledge-automata/blob/v0.0.1/docs/decisions/0008-light-engineering-standard-for-v0-1.md)) |
 
 ## 4. What worked
 
@@ -97,7 +98,7 @@ Good teams improve two things: the product and the way they work. Of the four pi
 
 I applied it to the process as well as the product. The handoffs, the running logs, STATUS, the backlog and `AGENTS.md` were committed, reviewed and improved like code. We externalized the project’s memory, and its process too, because they lived in the repo and not in chats (P8), every improvement stuck. And because they stuck, they compounded (P16). That is what turned an organic experiment into a cycle that keeps improving itself.
 
-Every example below comes from the project's [principles in practice log](https://github.com/miguelmog10/knowledge-automata/blob/0cb5d1d/dev/principles-in-practice.md), a running record of each time a principle shaped the work.
+Every example below comes from the project's [principles in practice log](https://github.com/miguelmog10/knowledge-automata/blob/v0.0.1/dev/principles-in-practice.md), a running record of each time a principle shaped the work.
 
 ### The four pillars
 
@@ -131,21 +132,21 @@ The principles weren't rigid, and they shouldn't be. When the process becomes th
 
 ### More examples, for the curious
 
-- **Contracts before code.** The data formats were designed before any implementation and handed over as a contract (P2). [Handoff 002](https://github.com/miguelmog10/knowledge-automata/blob/0cb5d1d/dev/handoffs/002-register-schemas.md)
+- **Contracts before code.** The data formats were designed before any implementation and handed over as a contract (P2). [Handoff 002](https://github.com/miguelmog10/knowledge-automata/blob/v0.0.1/dev/handoffs/002-register-schemas.md)
 
-- **The model proposes, code checks.** The AI drafts each record, and plain code checks that every quote really appears in the source, so nothing gets invented (P10, P12). [ADR-0014](https://github.com/miguelmog10/knowledge-automata/blob/0cb5d1d/docs/decisions/0014-registrar-drafting-loop.md)
+- **The model proposes, code checks.** The AI drafts each record, and plain code checks that every quote really appears in the source, so nothing gets invented (P10, P12). [ADR-0014](https://github.com/miguelmog10/knowledge-automata/blob/v0.0.1/docs/decisions/0014-registrar-drafting-loop.md)
 
-- **Prompts are versioned like code,** and each record notes which model, prompt and schema produced it (P7, P14). [Prompts](https://github.com/miguelmog10/knowledge-automata/tree/0cb5d1d/prompts)
+- **Prompts are versioned like code,** and each record notes which model, prompt and schema produced it (P7, P14). [Prompts](https://github.com/miguelmog10/knowledge-automata/tree/v0.0.1/prompts)
 
-- **Two corrections, both ways.** I stopped Claude from guessing that a reused file name meant a new revision, and Claude corrected my use of "atomic" (P5). [Handoff 005](https://github.com/miguelmog10/knowledge-automata/blob/0cb5d1d/dev/handoffs/005-sensor-and-ledger.md), [handoff 006](https://github.com/miguelmog10/knowledge-automata/blob/0cb5d1d/dev/handoffs/006-comparator.md)
+- **Two corrections, both ways.** I stopped Claude from guessing that a reused file name meant a new revision, and Claude corrected my use of "atomic" (P5). [Handoff 005](https://github.com/miguelmog10/knowledge-automata/blob/v0.0.1/dev/handoffs/005-sensor-and-ledger.md), [handoff 006](https://github.com/miguelmog10/knowledge-automata/blob/v0.0.1/dev/handoffs/006-comparator.md)
 
-- **The plan bent, the architecture held.** A handoff put some file writes inside an agent, but an existing rule, enforced by a test, says agents never touch storage. The rule won, and the change from the plan was recorded (P2). [ADR-0015](https://github.com/miguelmog10/knowledge-automata/blob/0cb5d1d/docs/decisions/0015-artifact-ledger-storage-and-sensor-checks.md)
+- **The plan bent, the architecture held.** A handoff put some file writes inside an agent, but an existing rule, enforced by a test, says agents never touch storage. The rule won, and the change from the plan was recorded (P2). [ADR-0015](https://github.com/miguelmog10/knowledge-automata/blob/v0.0.1/docs/decisions/0015-artifact-ledger-storage-and-sensor-checks.md)
 
-- **"Why three?"** A starting value became a setting, measured and left to tune later, instead of a constant nobody questioned (P11). [Handoff 006](https://github.com/miguelmog10/knowledge-automata/blob/0cb5d1d/dev/handoffs/006-comparator.md)
+- **"Why three?"** A starting value became a setting, measured and left to tune later, instead of a constant nobody questioned (P11). [Handoff 006](https://github.com/miguelmog10/knowledge-automata/blob/v0.0.1/dev/handoffs/006-comparator.md)
 
-- **Real output, committed as it came out,** weak fields and findings included, not rerun until it looked better (P11). [Sample project](https://github.com/miguelmog10/knowledge-automata/blob/0cb5d1d/examples/sample-project/README.md)
+- **Real output, committed as it came out,** weak fields and findings included, not rerun until it looked better (P11). [Sample project](https://github.com/miguelmog10/knowledge-automata/blob/v0.0.1/examples/sample-project/README.md)
 
-- **Tests that can't spend money.** All 951 run offline, and a test that reaches the network fails loudly (P10). [`tests/conftest.py`](https://github.com/miguelmog10/knowledge-automata/blob/0cb5d1d/tests/conftest.py)
+- **Tests that can't spend money.** All 951 run offline, and a test that reaches the network fails loudly (P10). [`tests/conftest.py`](https://github.com/miguelmog10/knowledge-automata/blob/v0.0.1/tests/conftest.py)
 
 - **The running logs became the playbook.** Two logs kept in the repo, one for how the principles showed up and one for how the tools behaved, became playbook rule 7 and templates any project can copy (P16). [Templates, v1.1.0](https://github.com/miguelmog10/ai-assisted-software-engineering/tree/v1.1.0/templates)
 
@@ -163,7 +164,7 @@ A bug on its own isn't news. What I wanted to know was where the way of working 
 
 #### 1. Between our system and a new API
 
-In the first real run, five of six first replies came back with the model's reasoning written in prose before the JSON, so they were rejected. I almost reported it as a provider problem. The cause was ours: Cohere's docs ask that a prompt in JSON mode also ask for JSON, and ours didn't. One line fixed it. Strict parsing caught it. The repro found it. The [write-up](https://github.com/miguelmog10/cohere-feedback) owns it.
+In the first real run, five of six first replies came back with the model's reasoning written in prose before the JSON, so they were rejected. I almost reported it as a provider problem. Part of the cause was ours: Cohere's docs ask that a prompt in JSON mode also ask for JSON, and ours didn't. One line fixed it in a small reproduction. Across the whole pipeline, it turned out necessary but not sufficient: with the model's thinking disabled, the agents that have to judge still wrote their reasoning first ([handoff 008, section 9](https://github.com/miguelmog10/knowledge-automata/blob/v0.0.1/dev/handoffs/008-json-instruction.md)). So thinking stays on, and the [pre-release notes](https://github.com/miguelmog10/knowledge-automata/blob/v0.0.1/CHANGELOG.md) say so. It was the third time a single test document gave a misleading result. Strict parsing caught it. The repro found part of it. The full pipeline found the rest. The [write-up](https://github.com/miguelmog10/cohere-feedback) owns the first part.
 
 The bug isn't the lesson. The speed is. Working alone with a new API, I would have read the docs slowly, and that slowness is often how a detail like "ask for JSON" sinks in. I'm not sure I would have caught it that way either. But at agent speed, we moved faster than I could absorb (P11).
 
@@ -187,7 +188,7 @@ Being thorough slows you down a little. Sometimes the process interrupted my flo
 
 As in section 3, two tools did the work, with me in the loop. So the project had three costs, and only one was measured.
 
-1. **Copilot, the implementer:** about 9,100 credits on Copilot's entry-level plan, logged per pull request as its last commit before merging (P11). The table below has the details.
+1. **Copilot, the implementer:** about 9,100 credits for the build on Copilot's entry-level plan, plus 137.6 for the follow-up fix, logged per pull request as its last commit before merging (P11). The table below has the details.
 
 2. **Claude, the advisor, planner and reviewer:** covered by my subscription, so not measured. From what I saw of my usage, Claude Pro would most likely have been enough for this project, with room to spare, though I didn't record it. I moved to Max later, once I was running several projects at the same time and didn't want to watch the usage limits. (Once I saw this working, I got a little overexcited and started more projects than I'd like to admit. I'm sure I'm not the only one.)
 
@@ -202,9 +203,11 @@ As in section 3, two tools did the work, with me in the loop. So the project had
 | 005 | Sensor (intake) and Artifact Ledger | #8 | 1,118.4 |
 | 006 | Comparator (reconciliation) | #11 | 2,199.3 |
 | 007 | Governor (orchestrator), in three parts | #15 | 2,801.6 |
-| | **Total** | | **9,109.4** |
+| | **Build total** | | **9,109.4** |
+| 008 | Follow-up: the JSON fix, released as v0.0.1 | #19 | 137.6 |
+| | **Total** | | **9,247.0** |
 
-Source: [`dev/costs.md`](https://github.com/miguelmog10/knowledge-automata/blob/0cb5d1d/dev/costs.md).
+Source: [`dev/costs.md`](https://github.com/miguelmog10/knowledge-automata/blob/v0.0.1/dev/costs.md).
 
 **The largest single step.** Part B of handoff 007 cost 1,137.1 credits. Once the questions were answered, it was about 30 minutes of agent coding, and every test passed.
 
@@ -224,7 +227,7 @@ They didn't stay in Knowledge Automata. The handoffs, the running logs and the l
 
 #### As an engineer: technical anchors
 
-I'm a robotics engineer, not a traditional software developer, and setting up a repository isn't something I do often. In a couple of conversations, the agents helped me set one up to industry standard: branch protection, pull-request-only changes, CI as a required check, secret scanning ([log entry](https://github.com/miguelmog10/knowledge-automata/blob/0cb5d1d/dev/principles-in-practice.md)). I could have done it alone, but it would have taken much longer, and I'd likely have missed a few settings along the way. I asked them to explain the why each time, so I learned as I went.
+I'm a robotics engineer, not a traditional software developer, and setting up a repository isn't something I do often. In a couple of conversations, the agents helped me set one up to industry standard: branch protection, pull-request-only changes, CI as a required check, secret scanning ([log entry](https://github.com/miguelmog10/knowledge-automata/blob/v0.0.1/dev/principles-in-practice.md)). I could have done it alone, but it would have taken much longer, and I'd likely have missed a few settings along the way. I asked them to explain the why each time, so I learned as I went.
 
 That was one example. I didn't have one advisor, but a bench of them, across software architecture, design, documentation and project management. They became my technical anchors. I still question their advice, but I'm never starting from zero.
 
@@ -246,7 +249,7 @@ With the implementation barrier this low, the ideas keep coming. One project has
 
 This is one project, built by one person with two agents, at prototype scale. A lesson from one project is still just a lesson. It becomes a principle only if it holds up in a second one. Nothing here is tested yet at product or production scale, and the playbook says so rule by rule.
 
-Knowledge Automata is working, not finished. Before v0.1.0 it still needs the Risk Registrar, an evaluation set to judge its output, and the prompt fix from section 5. Later come the planned agents, like the Observer and the Oracle, and potentially other registers.
+Knowledge Automata is working, not finished. The prompt fix from section 5 shipped in v0.0.1. Before v0.1.0 it still needs the Risk Registrar and an evaluation set to judge its output. Later come the planned agents, like the Observer and the Oracle, and potentially other registers.
 
 The principles in practice log now goes into every new project. As more projects follow, I can compare five or ten of these logs side by side, and see which principles hold across projects, and which only held for this one.
 
@@ -260,11 +263,11 @@ More dishes in the kitchen. 👨🏾‍🍳
 
 ## References
 
-- [Knowledge Automata](https://github.com/miguelmog10/knowledge-automata/tree/0cb5d1d) and its [visual guide](https://miguelmog10.github.io/knowledge-automata/guide/)
+- [Knowledge Automata](https://github.com/miguelmog10/knowledge-automata/tree/v0.0.1) and its [visual guide](https://miguelmog10.github.io/knowledge-automata/guide/)
 
-- Its running logs: [principles in practice](https://github.com/miguelmog10/knowledge-automata/blob/0cb5d1d/dev/principles-in-practice.md), [tool feedback](https://github.com/miguelmog10/knowledge-automata/blob/0cb5d1d/dev/tool-feedback.md) and [costs](https://github.com/miguelmog10/knowledge-automata/blob/0cb5d1d/dev/costs.md)
+- Its running logs: [principles in practice](https://github.com/miguelmog10/knowledge-automata/blob/v0.0.1/dev/principles-in-practice.md), [tool feedback](https://github.com/miguelmog10/knowledge-automata/blob/v0.0.1/dev/tool-feedback.md) and [costs](https://github.com/miguelmog10/knowledge-automata/blob/v0.0.1/dev/costs.md)
 
-- The [handoffs](https://github.com/miguelmog10/knowledge-automata/tree/0cb5d1d/dev/handoffs) and the [decision records](https://github.com/miguelmog10/knowledge-automata/tree/0cb5d1d/docs/decisions)
+- The [handoffs](https://github.com/miguelmog10/knowledge-automata/tree/v0.0.1/dev/handoffs) and the [decision records](https://github.com/miguelmog10/knowledge-automata/tree/v0.0.1/docs/decisions)
 
 - The JSON finding: [public write-up and reproduction](https://github.com/miguelmog10/cohere-feedback)
 

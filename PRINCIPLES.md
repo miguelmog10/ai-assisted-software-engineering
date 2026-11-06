@@ -426,4 +426,4 @@ This document was developed with the help of AI tools.
 
 I used them to brainstorm, explore alternatives, challenge assumptions, structure ideas, and refine the writing. The experiences, observations, decisions, and perspective behind the document are my own.
 
-In that sense, the document is also an experiment in the approach it describes. The first case study is out of the oven: [Knowledge Automata](https://github.com/miguelmog10/knowledge-automata). The full write-up is coming.
+In that sense, the document is also an experiment in the approach it describes. The first case study is out of the oven: [Knowledge Automata](case-studies/knowledge-automata/), with the project's own repo at [miguelmog10/knowledge-automata](https://github.com/miguelmog10/knowledge-automata).
